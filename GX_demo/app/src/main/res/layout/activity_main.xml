@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0000000"
+    tools:context="com.simtoo.simtoodrone.MainActivity">
+    <RelativeLayout
+        android:id="@+id/control_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/Up"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/left"
+            android:layout_above="@+id/left"
+            android:layout_marginBottom="5dp"
+            android:text="上升"
+            android:background="@drawable/control_btn_normal"/>
+
+        <Button
+            android:id="@+id/down"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="下降"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/left"
+            android:layout_toEndOf="@+id/left"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/control_btn_normal"/>
+
+        <Button
+            android:id="@+id/left"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="37dp"
+            android:text="左转向"
+            android:layout_alignBottom="@+id/down"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/control_btn_normal"/>
+
+        <Button
+            android:id="@+id/right"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="右转向"
+            android:layout_toRightOf="@+id/Up"
+            android:layout_alignTop="@id/left"
+            android:background="@drawable/control_btn_normal"/>
+
+        <Button
+            android:id="@+id/rights"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="右偏移"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="37dp"
+            android:background="@drawable/control_btn_normal"/>
+
+        <Button
+            android:id="@+id/ups"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/rights"
+            android:layout_above="@+id/rights"
+            android:layout_marginBottom="5dp"
+            android:text="前进"
+            android:background="@drawable/control_btn_normal"/>
+
+        <Button
+            android:id="@+id/lefts"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="左偏移"
+            android:layout_toLeftOf="@+id/ups"
+            android:layout_alignTop="@+id/rights"
+            android:background="@drawable/control_btn_normal"/>
+
+        <Button
+            android:id="@+id/downs"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="后退"
+            android:layout_alignBaseline="@+id/down"
+            android:layout_alignBottom="@+id/down"
+            android:layout_toRightOf="@+id/lefts"
+            android:layout_toEndOf="@+id/lefts"
+            android:background="@drawable/control_btn_normal"/>
+
+        <Button
+            android:id="@+id/ib_adjust_down"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="云台向下"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/control_btn_normal"/>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/ib_adjust_up"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="云台向上"
+            android:layout_above="@+id/ib_adjust_down"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/control_btn_normal"/>
+
+        <Button
+            android:id="@+id/land"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="降落"
+            android:layout_above="@+id/ib_adjust_up"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/control_btn_selector"/>
+
+        <Button
+            android:id="@+id/takeoff"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="起飞"
+            android:layout_above="@+id/land"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/control_btn_selector"/>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_accelerometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加速计校准"
+            android:layout_above="@+id/takeoff"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/control_btn_selector"/>
+        <Button
+            android:id="@+id/btn_compass"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="校准功能"
+            android:layout_above="@+id/btn_accelerometer"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/control_btn_selector"/>
+        <Button
+            android:visibility="gone"
+            android:layout_above="@+id/btn_compass"
+            android:id="@+id/btn_flip"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="翻滚模式-3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/control_btn_selector"/>
+        <Button
+            android:layout_above="@+id/btn_flip"
+            android:id="@+id/btn_qianflip"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="加速计校准"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/control_btn_selector"/>
+        <Button
+            android:layout_above="@+id/btn_qianflip"
+            android:id="@+id/btn_guangliu"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="GPS跟随"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/control_btn_selector"/>
+
+
+        <TextView
+            android:textColor="#FFFFFF"
+            android:id="@+id/tv_altitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:textColor="#FFFFFF"
+            android:id="@+id/tv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_altitude"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:textColor="#FFFFFF"
+            android:id="@+id/tv_gpsNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_distance"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:textColor="#FFFFFF"
+            android:id="@+id/tv_battery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_gpsNumber"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:textColor="#FFFFFF"
+            android:id="@+id/tv_wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_battery"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:textColor="#FFFFFF"
+            android:id="@+id/tv_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_wifi"
+            android:layout_marginTop="2dp"/>
+
+    </RelativeLayout>
+</RelativeLayout>

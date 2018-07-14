@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">STDrone</string>
+
+    <!-- Compass Setup Resource Strings -->
+    <string name="setup_mag_title">罗盘校准</string>
+    <string name="setup_mag_start">点击校准开始磁罗盘校准。进行校准的时候远离金属物</string>
+
+    <!-- Accelerometer Setup Resource Strings -->
+    <string name="setup_imu_title">加速度计校准</string>
+    <string name="setup_imu_start">点击校准开始IMU校准。开始校准过程之前确保模型放置在平坦表面上。</string>
+    <string name="setup_imu_normal">将模型放在水平位置，确保移动最小化，然后按下一步。</string>
+    <string name="setup_imu_left">将模型左面朝上放好，确保移动最小化，然后按下一步。</string>
+    <string name="setup_imu_right">将模型右面朝上放好，确保移动最小化，然后按下一步。</string>
+    <string name="setup_imu_nosedown">将模型机头朝下放好，确保移动最小化，然后按下一步。</string>
+    <string name="setup_imu_noseup">将模型机头朝上放好，确保移动最小化，然后按下一步。</string>
+    <string name="setup_imu_back">将模型底朝天放好，确保移动最小化，然后按下一步。</string>
+    <string name="setup_imu_completed">加速度计校准完成。如果未成功，请重新校准。</string>
+    <string name="setup_imu_step">要开始校准，请点击校准。</string>
+    <string name="setup_imu_timeleft">下一个方向前的剩余时间：</string>
+
+
+    <!-- Common Setup Buttons Resource Strings -->
+    <string name="button_setup_calibrate">校准</string>
+    <string name="button_setup_cancel">取消</string>
+    <string name="button_setup_send">发送</string>
+    <string name="button_setup_next">下一步</string>
+    <string name="button_setup_reset">重置</string>
+    <string name="button_setup_done">完成</string>
+    <string name="Pause">暂停</string>
+    <string name="dialog_box_btn_txt_ok">OK</string>
+    <string name="logos">选择其中一个作为连接</string>
+    <string name="confirm_exit">手机</string>
+    <string name="cancel">遥控器</string>
+
+
+
+    <string name="menu1">画笔宽度</string>
+    <string name="menu1_sub1">1</string>
+    <string name="menu1_sub2">5</string>
+    <string name="menu1_sub3">10</string>
+    <string name="menu1_sub4">50</string>
+    <string name="menu2">画笔</string>
+    <string name="menu3">橡皮擦</string>
+    <string name="menu4">保存</string>
+    <string name="menu5">退出</string>
+    <string name="menu_author">xxx</string>
+</resources>
